@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>AI for Marketing (AI untuk Pemasaran)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827; /* bg-gray-900 */
+      color: #F9FAFB; /* text-gray-50 */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f2937; /* gray-800 */
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      color: #2dd4bf; /* teal-400 */
+      margin: 0;
+    }
+    main {
+      padding: 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #93C5FD; /* blue-300 */
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      list-style-type: '• ';
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      border: 1px solid #374151;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    table th {
+      background-color: #1f2937;
+      color: #2dd4bf;
+    }
+    .diagram-container {
+      margin-top: 2rem;
+      background-color: #1f2937;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+    }
+    .arch-diagram-svg {
+      min-width: 800px;
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: #9CA3AF;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      body {
+        font-size: 0.95rem;
+      }
+      header h1 {
+        font-size: 1.25rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      /* Responsive Table Styling */
+      .responsive-table {
+        border: none;
+      }
+      .responsive-table thead {
+        display: none;
+      }
+      .responsive-table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #374151;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+      }
+      .responsive-table td {
+        display: block;
+        text-align: right;
+        border: none;
+        padding-left: 50%;
+        position: relative;
+      }
+      .responsive-table td:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+      .responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.75rem;
+        width: calc(50% - 1.5rem);
+        padding-right: 0.5rem;
+        text-align: left;
+        font-weight: bold;
+        color: #93C5FD;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI for Marketing (AI untuk Pemasaran)</h1>
+  </header>
+  <main>
+    <section>
+      <h2>📘 Deskripsi Kursus</h2>
+      <p>Kursus ini mengeksplorasi penerapan AI generatif dalam pemasaran. Peserta (tim korporat, profesional pemasaran, wirausahawan, dan mahasiswa) belajar membangun agen pemasaran berbasis AI menggunakan ChatGPT (MyGPT), Google Gemini (Gems), Claude, dan lainnya. Fokusnya praktis dan berbasis proyek; setiap sesi menampilkan latihan langsung (lab) untuk mengembangkan agen AI khusus kasus pemasaran, serta integrasi prompt engineering dan teknik evaluasi. Dengan mengadaptasi studi kasus dunia nyata (misalnya contoh brand dengan peningkatan konversi dan retensi melalui personalisasi, kursus ini memperkenalkan konsep segmentasi pasar, peningkatan kesadaran, keterlibatan media sosial, pengalaman toko/web, serta analitik web, atribusi, harapan pelanggan, churn, sentimen, dan layanan pelanggan menggunakan AI. Peserta akan mengerjakan proyek akhir yang mencakup pengembangan agen AI pemasaran dan rencana strategis pemasaran bertenaga AI. Menurut McKinsey, AI kini mengubah lanskap marketing dengan memungkinkan konten hiper-personalisasi dan otomatisasi tugas rutin.</p>
+    </section>
+
+    <section>
+      <h2>🎯 Tujuan Pembelajaran</h2>
+      <ul>
+        <li><strong>Menerapkan AI untuk riset pasar (Market Research):</strong> Mengidentifikasi segmen audiens dan tren pasar menggunakan AI (segmentasi pasar, kesadaran merek, media sosial).</li>
+        <li><strong>Menghasilkan konten pemasaran persuasif (Persuasion):</strong> Menggunakan AI untuk pengalaman in-store dan online yang lebih baik, termasuk analitik web, rekomendasi produk, dan atribusi kanal.</li>
+        <li><strong>Analisis churn dan sentimen untuk retensi (Retention):</strong> Menerapkan AI untuk memprediksi churn, memahami harapan pelanggan, dan menganalisis sentimen dari umpan balik (survey, review) guna meningkatkan layanan pelanggan.</li>
+        <li><strong>Berkreasi dengan Prompt Engineering:</strong> Menguasai teknik pembuatan prompt (langsung & berulang) untuk model LLM (ChatGPT, Gemini, Claude) agar mendapatkan hasil optimal.</li>
+        <li><strong>Mengembangkan Agen Percakapan AI:</strong> Mendesain dan membangun agen AI (seperti chatbot atau asisten virtual) untuk tugas spesifik pemasaran, menggunakan MyGPT/Gems.</li>
+        <li><strong>Merumuskan Rencana Strategis AI-Marketing:</strong> Menyusun rencana pemasaran strategis yang memanfaatkan AI (termasuk pembuatan pitch akhir tentang agen & strategi AI).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🗂️ Struktur Kursus (9 Sesi – 3 Jam/Sesi)</h2>
+      <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Sesi</th>
+                <th>Topik</th>
+                <th>Fokus Utama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td data-label="Sesi">1</td><td data-label="Topik">Pengenalan AI & Marketing</td><td data-label="Fokus">Dasar-dasar AI generatif, tren pemasaran, peran AI dalam customer journey, gambaran kursus.</td></tr>
+            <tr><td data-label="Sesi">2</td><td data-label="Topik">Prompt Engineering & Tools AI</td><td data-label="Fokus">Prinsip & struktur prompt; pengenalan ChatGPT (MyGPT), Google Gemini (Gems), Claude, API, Colab.</td></tr>
+            <tr><td data-label="Sesi">3</td><td data-label="Topik">Riset Pasar dengan AI</td><td data-label="Fokus">AI untuk segmentasi pasar, analisis media sosial, brand awareness. Case study targeting dinamis.</td></tr>
+            <tr><td data-label="Sesi">4</td><td data-label="Topik">Membangun Agen AI – Riset Pasar</td><td data-label="Fokus">Laboratorium: Membangun agen (MyGPT/Gems) untuk riset pasar (analisis polling/trend). Latihan prompt bilingual.</td></tr>
+            <tr><td data-label="Sesi">5</td><td data-label="Topik">AI untuk Membujuk (Persuasion)</td><td data-label="Fokus">AI dalam ritel, analitik web (A/B testing, SEO), e-commerce (rekomendasi), atribusi kampanye.</td></tr>
+            <tr><td data-label="Sesi">6</td><td data-label="Topik">Membangun Agen AI – Persuasi</td><td data-label="Fokus">Laboratorium: Mengembangkan agen AI (chatbot penjualan multibahasa). Praktik prompt berulang.</td></tr>
+            <tr><td data-label="Sesi">7</td><td data-label="Topik">AI untuk Retensi (Retention)</td><td data-label="Fokus">Memprediksi churn, mengelola harapan pelanggan, analisis sentimen, AI dalam layanan pelanggan (chatbot 24/7).</td></tr>
+            <tr><td data-label="Sesi">8</td><td data-label="Topik">Membangun Agen AI – Retensi</td><td data-label="Fokus">Laboratorium: Membangun agen AI retensi (FAQ assistant, sistem rekomendasi anti-churn). Evaluasi model.</td></tr>
+            <tr><td data-label="Sesi">9</td><td data-label="Topik">Presentasi Proyek Akhir</td><td data-label="Fokus">Pitch tim: demo agen AI, rencana strategis pemasaran, analisis hasil, dan justifikasi strategi. Feedback.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="diagram-container">
+        <svg viewBox="0 0 850 450" class="arch-diagram-svg">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf" />
+            </marker>
+          </defs>
+          
+          <g>
+            <rect x="325" y="30" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="425" y="55" fill="#F9FAFB" text-anchor="middle" font-size="11">S1: Pengenalan AI & Marketing</text>
+          </g>
+          <g>
+            <rect x="325" y="100" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="425" y="125" fill="#F9FAFB" text-anchor="middle" font-size="11">S2: Prompt Engineering & Tools</text>
+          </g>
+          <line x1="425" y1="80" x2="425" y2="100" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)" />
+
+          <g>
+            <rect x="30" y="170" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="130" y="195" fill="#F9FAFB" text-anchor="middle" font-size="11">S3: Konsep Riset Pasar</text>
+          </g>
+          <g>
+            <rect x="30" y="240" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="130" y="265" fill="#F9FAFB" text-anchor="middle" font-size="11">S4: Lab Agen Riset Pasar</text>
+          </g>
+          <line x1="130" y1="220" x2="130" y2="240" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)" />
+          <path d="M 425 150 L 425 170 L 130 170" stroke="#2dd4bf" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+          <g>
+            <rect x="325" y="170" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="425" y="195" fill="#F9FAFB" text-anchor="middle" font-size="11">S5: Konsep Persuasi (Web/Toko)</text>
+          </g>
+          <g>
+            <rect x="325" y="240" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="425" y="265" fill="#F9FAFB" text-anchor="middle" font-size="11">S6: Lab Agen Persuasi</text>
+          </g>
+          <line x1="425" y1="220" x2="425" y2="240" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="425" y1="150" x2="425" y2="170" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)" />
+
+          <g>
+            <rect x="620" y="170" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="720" y="195" fill="#F9FAFB" text-anchor="middle" font-size="11">S7: Konsep Retensi (Churn)</text>
+          </g>
+          <g>
+            <rect x="620" y="240" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="720" y="265" fill="#F9FAFB" text-anchor="middle" font-size="11">S8: Lab Agen Retensi</text>
+          </g>
+          <line x1="720" y1="220" x2="720" y2="240" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)" />
+          <path d="M 425 150 L 425 170 L 720 170" stroke="#2dd4bf" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+          
+          <g>
+            <rect x="325" y="340" width="200" height="50" rx="5" fill="#374151" stroke="#4B5563"/>
+            <text x="425" y="365" fill="#F9FAFB" text-anchor="middle" font-size="11">S9: Presentasi Proyek Akhir</text>
+          </g>
+          <path d="M 130 290 L 130 320 L 425 320 L 425 340" stroke="#2dd4bf" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+          <path d="M 425 290 L 425 340" stroke="#2dd4bf" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+          <path d="M 720 290 L 720 320 L 425 320" stroke="#2dd4bf" stroke-width="2" fill="none" />
+
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>🧪 Contoh Proyek/Latihan</h2>
+      <ul>
+        <li><strong>Lab:</strong> Gunakan ChatGPT untuk mensintesis demografi pelanggan dan menghasilkan target persona (segmentasi pasar). Exercise: Tulis prompt untuk menanyakan wawasan pasar pada data yang disediakan.</li>
+        <li><strong>Project:</strong> Buat agen percakapan (mis. ChatGPT Custom/MyGPT atau Gemini Gems) untuk merekomendasikan produk berdasarkan preferensi pengguna; sertakan dialog dua bahasa.</li>
+        <li><strong>Case Study:</strong> Analisis studi kasus nyata seperti peningkatan konversi menggunakan iklan AI (Vans Performance Max: +46% konversi) atau penggunaan demand-gen (Les Mills) di bidang e-commerce.</li>
+        <li><strong>Assignment:</strong> Bangun modul analisis churn sederhana (mis. ChatGPT memprediksi churn dari deskripsi pengguna).</li>
+        <li><strong>Group Exercise:</strong> Merancang kampanye media sosial dengan konten yang dihasilkan AI untuk meningkatkan kesadaran dan engagement.</li>
+        <li><strong>Bilingual Task:</strong> Kembangkan daftar terminologi pemasaran utama dalam Bahasa dan English, lalu gunakan keduanya dalam prompt untuk agen AI.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🛠 Tools & Software Requirements</h2>
+      <ul>
+        <li><strong>AI Platforms:</strong> Akun OpenAI (ChatGPT API/MyGPT), Google Gemini (Akses melalui AI Test Kitchen atau web; gunakan Gemini Gems untuk custom agents), akun Anthropic Claude.</li>
+        <li><strong>Development Environment:</strong> Python 3.x, Jupyter Notebook atau Google Colab, untuk eksperimen data dan pemanggilan API LLM.</li>
+        <li><strong>Collaboration Tools:</strong> Aplikasi chat/messaging (Slack, MS Teams, atau Telegram) untuk pengujian chatbots; platform presentasi (PowerPoint/Google Slides).</li>
+        <li><strong>Data Sources:</strong> Contoh dataset pemasaran (survey, logs web) yang disediakan, atau API media sosial (opsional).</li>
+        <li><strong>Lainnya:</strong> Browser web, editor teks, serta, jika diperlukan, pustaka ML dasar (pandas, sklearn) untuk analisis sederhana dan visualisasi.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📚 Referensi</h2>
+      <ul>
+        <li>McKinsey & Company, “AI-powered sales and marketing reach new heights with generative AI”</li>
+        <li>Google (Think with Google), “AI for Marketing: from hype to how”</li>
+        <li>Insider, “AI-Based Personalization Engine”</li>
+        <li>(Additional readings on prompt engineering, agent development, dan AI marketing dapat direkomendasikan secara terpisah.)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧮 Skema Penilaian</h2>
+      <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Komponen Penilaian</th>
+                <th>Bobot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td data-label="Komponen">Partisipasi & Diskusi</td><td data-label="Bobot">10%</td></tr>
+            <tr><td data-label="Komponen">Tugas dan Latihan</td><td data-label="Bobot">30%</td></tr>
+            <tr><td data-label="Komponen">Pembangunan Agen AI</td><td data-label="Bobot">30%</td></tr>
+            <tr><td data-label="Komponen">Pitch Proyek Akhir</td><td data-label="Bobot">30%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>📌 Prasyarat</h2>
+      <ul>
+          <li><strong>Pengetahuan Pemasaran Dasar:</strong> Memahami konsep dasar pemasaran (4P, segmentasi, customer journey) / Basic marketing principles.</li>
+          <li><strong>Keterampilan Komputer:</strong> Familiar dengan penggunaan komputer, internet, dan aplikasi perkantori. Dasar pemrograman Python atau willingness to learn kodifikasi sederhana (untuk lab) berguna, tetapi tidak wajib.</li>
+          <li><strong>Kemampuan Bahasa:</strong> Peserta diharapkan nyaman membaca dan menulis Bahasa Indonesia dan English, serta memahami istilah pemasaran dalam kedua bahasa.</li>
+      </ul>
+    </section>
+    
+  </main>
+  <footer>
+    © 2025 Generative AI Training. All rights reserved.
+  </footer>
+</body>
+</html>
